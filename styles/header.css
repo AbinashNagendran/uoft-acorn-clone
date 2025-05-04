@@ -1,0 +1,135 @@
+.header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(1, 58, 111);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(204, 204, 204);
+}
+
+
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.acorn-header {
+    display: inline;
+    color: white;
+    margin-left: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: solid;
+
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 15px;
+}
+
+
+.right-section button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+}
+
+
+.need-help-button {
+    background-color: rgb(0, 125, 179);
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 15px;
+
+    
+}
+.need-help-button:hover, .acorn-btn-icon-button:hover {
+    background-color: rgb(0, 152, 217);
+
+}
+
+
+.need-help-text
+{
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 500;
+
+}
+
+.acorn-btn-icon-button {
+    background-color: rgb(0, 125, 179);
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+.current-user-button {
+    background-color: rgb(1, 58, 111);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.current-user-text {
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: white;
+}
+
+.need-help-container, .notif-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.need-help-container .tooltip, .notif-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -40px;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+    transition-delay: 250ms;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.need-help-container:hover .tooltip, .notif-container:hover .tooltip {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
