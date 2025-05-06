@@ -1,0 +1,86 @@
+.sidebar {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    width: 200px;
+    z-index: 500;
+    padding-top: 5px;
+
+}
+
+.academics-sidebar-header {
+    background-color: rgb(56, 167, 192);
+}
+
+.academics-sidebar-container button, .finances-sidebar-container button, .life-sidebar-container button {
+    color: white;
+    margin-left: 20px;
+    background-color: rgb(51, 51, 51);;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.dashboard, .prof-settings {
+    padding: 10PX;
+    font-size: 14px;
+    font-family: Arial;
+    margin-left: 20px;
+    
+}
+.academics-sidebar-text, .finances-sidebar-text, .life-sidebar-text  {
+    display: inline;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.quercus {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.pointer {
+    height: 15px;
+}
+
+.enrol, .account, .health {
+    margin-top: 15px;
+}
+
+.finances-sidebar-header {
+    background-color: rgb(28, 153, 109);
+
+}
+
+
+.finances-sidebar-header, .academics-sidebar-header, .life-sidebar-header {
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+.life-sidebar-header {
+    background-color: rgb(110, 77, 188);
+}
+
+
+
+.dollar_sign_icon {
+    height: 20px;
+    
+}
+
+
+
+
+
+

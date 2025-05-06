@@ -9,9 +9,7 @@
     right: 0;
     z-index: 1000;
     background-color: rgb(1, 58, 111);
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(204, 204, 204);
+    border: none;
 }
 
 
@@ -29,7 +27,8 @@
     font-size: 20px;
     font-weight: 700;
     text-decoration: solid;
-
+    cursor: pointer;
+    user-select: none;
 }
 
 .right-section {
