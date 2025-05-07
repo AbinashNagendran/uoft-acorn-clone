@@ -53,7 +53,7 @@
     padding-left: 6px;
 }
 
-.view-timetable-button, .view-courses-button{
+.view-timetable-button, .view-courses-button, .financial-buttons-section button, .awards-button {
     background-color: rgb(0, 42, 92);
     font-family: "Helvetica Neue",;
     color: white;
@@ -81,20 +81,20 @@
 
 }
 
-.academics-subtitle {
+.academics-subtitle, .account-balance-header, .financial-arrangement-header, .award-header {
     font-size: 16px
 }
-.program-title {
+.program-title, .session-text {
     font-size: 14px;
     margin: 0;
 }
 
-.registered-container {
+.registered-container, .financial-container {
     position: relative;
     display: inline;
 
 }
-.registered-tooltip {
+.registered-tooltip, .financial-tooltip {
     position: absolute;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -110,20 +110,29 @@
     pointer-events: none;
     width: 200px;
     padding: 10px;
+
+}
+.financial-tooltip {
+    bottom:-120px;
+    margin-left: 10px;
 }
 
 
-.registered-container:hover .registered-tooltip {
+.registered-container:hover .registered-tooltip, .financial-container:hover .financial-tooltip {
     opacity: 1;
 }
 
-.registered-hover-text {
+.registered-hover-text, .financial-hover-text {
     color: rgb(0, 130, 15);
     cursor: pointer;
     font-size: 13px;
     border-bottom-style: dotted;
     border-bottom-width: 0.8px;
 
+
+}
+.financial-hover-text {
+    color: black;
 }
 
 .courses-list {
@@ -148,3 +157,76 @@
     margin-top: 15px;
 
 }
+
+.account-balance-header {
+    margin: 0px;
+
+}
+
+.account-balance-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.money {
+    font-size: 16px;
+    border-bottom-style: dotted;
+    border-bottom-width: 0.8px;
+}
+
+
+.financial-buttons-section {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.financial-buttons-section button {
+    margin-left: 10px;
+}
+
+.award-content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(171, 227, 255);
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(44, 180, 248);
+
+    
+} 
+
+.award-content-container p {
+    font-size: 14px;
+    margin: 0;
+    margin-left: 10px;
+
+}
+
+.award-section {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+   
+}
+
+.awards-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 70px;
+}
+
+
+
+@media (max-width: 900px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+

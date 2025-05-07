@@ -11,3 +11,8 @@ body {
     position: relative;
 
 }
+
+a:visited {
+    color: rgb(18, 67, 123);
+    
+}
