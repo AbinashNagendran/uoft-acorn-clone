@@ -102,43 +102,76 @@
             <button>Housing</button>
             <button>Family Care</button>
         </div>
-
-
-        
-
-
-
-
-
-            
-
-
     </nav>
 
 
     <main>
         <div class="main-content">
-            <div class="timetable">
+            <div class="timetable-box">
                 <div class="timetable-title">Today's Timetable</div>
                 
-                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi totam, excepturi itaque error dolore quo, sapiente laudantium rem, eum accusamus consequuntur repellat nemo. Nulla iste rerum id quos aperiam. Ipsa?</div>
-                <div>
-                    <button>View Timetable</button>
+                <div class="timetable-content">
+                    <img class="calender-icon" src="icons/calender-icon.png" alt="">
+                    <div class="timetable-text">
+                        <p class="class-code"><strong>9:00</strong>&emsp;CSCB07H3 LEC01</p>
+                        <p ><strong>11:00</strong>&emsp;<a href="https://map.utoronto.ca/?id=1809#!ce/48600?m/959718">SAM IBRAHIM BUILDING - Room: IA 2150A</a></p>
+                    </div>
+                </div>
+                <div class="timetable-button-containter">
+                    <button class="view-timetable-button">View Timetable</button>
                 </div>
 
 
             </div>
-            <div class="profile-checklist">
-                <div>Profile Checklist</div>
+            <div class="profile-checklist-box">
+                <div class="profile-checklist-title">Profile Checklist</div>
+                <p class="profile-checklist-top-text">Maintaining your personal information helps U of T serve you better and ensures that we can contact you.</p>
+                &emsp;
+                <div style="display: flex;"> 
+                    <i style="color: rgb(45, 135, 0); font-size: 22px; " class="fa fa-check-circle"></i>
+                    <p class="profile-checklist-bottom-text">You've completed your profile checklist. You can always <a href="https://acorn.utoronto.ca/sws/#/profileAndSettings">visit the Profile page</a> to make updates.</p>
+                </div>
+            </div>
+            <div class="academics-box">
+                <div class="academics-title">Academics</div>
+                <section class="degree-content" >
+                    <h3 class="academics-subtitle">Degree Registration Status</h3>
+                    <section style="display: flex;">
+                        <p class="program-title"><strong>SCCSCHBSCC 2025 Summer</strong> &emsp;&emsp;&emsp;</p>
+                            <div class="registered-container">
+                                 <span  class="registered-hover-text">Registered</span>
+                                <div class="registered-tooltip" >
+                                    You have made the minimum payment or deferred your fees for this academic session. You are eligible to continue enrolling in courses, if applicable.
+                                </div>
+                            </div>
+                    </section>
 
+                </section>
+                <section class="degree-content">
+                    <h3 class="degree-content-subtitle">Enrolled Courses: 2025 Summer</h3>
+                    <hr style="margin: 0;">
+                    <div class="courses-list">
+                        <p><strong>CSCB09H3 Y</strong> Software Tools and Systems Programming</p>
+                        <hr>
+
+                        <p><strong>CSCB07H3 Y</strong> Software Design</p>
+                        <hr>
+
+                        <p><strong>CSCB58H3 Y</strong> Computer Organization</p>
+                        <hr>
+
+                        <p><strong>COPB51H3 Y</strong> Preparing to Compete for your Work Term</p>
+
+                    </div>
+                    <div class="academics-button-container">
+                        <button class="view-courses-button">Manage Courses</button>
+                    </div>
+
+                </section>
 
             </div>
-            <div class="academics">
-                <div>Academics</div>
-
-            </div>
-            <div class="finances">
-                <div>Finances</div>
+            <div class="finances-box">
+                <div class="finances-title">Finances</div>
             </div>
         </div>
     </main>
